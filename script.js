@@ -81,7 +81,7 @@ function whatsappOrder(id) {
   const selectedSize = sizeSelect ? sizeSelect.value : "S";
 
   const message = `Hello,%0AI'm interested in ordering:%0A- Product: ${product.name}%0A- Material: ${product.material}%0A- Price: ₹${product.price}%0A- Size: ${selectedSize}%0A- Art Number: ${product.artNumber}%0A- Image: ${product.image}`;
-  window.open(`https://wa.me/919361034037?text=${message}`, "_blank");
+  window.open(`https://wa.me/--- Number---?text=${message}`, "_blank");
 }
 
 // -------- View Product Page --------
