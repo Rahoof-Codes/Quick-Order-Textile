@@ -2,23 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clothing Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>LuxeMart Fashion</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <h1><strong>Textile Orders</strong></h1>
-    <div class="categories">
-      <button onclick="filterCategory('all')">All</button>
-      <button onclick="filterCategory('Men')">Men</button>
-      <button onclick="filterCategory('Women')">Women</button>
-      <button onclick="filterCategory('Kids')">Kids</button>
+    <div class="nav-top">
+      <div class="logo" onclick="renderHome()">Modern-Mart</div>
+      
+      <div class="icons">
+        <div class="icon-btn" onclick="renderWishlistPage()">
+          ♥ <span class="badge" id="wishlist-badge">0</span>
+        </div>
+        <div class="icon-btn" onclick="renderCartPage()">
+          🛒 <span class="badge" id="cart-badge">0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cat-scroll-container">
+      <div class="cat-scroll">
+        <div class="pill active" id="pill-all" onclick="renderHome()">All</div>
+        <div class="pill" id="pill-Women" onclick="renderGrid('Women')">Women</div>
+        <div class="pill" id="pill-Men" onclick="renderGrid('Men')">Men</div>
+        <div class="pill" id="pill-Kids" onclick="renderGrid('Kids')">Kids</div>
+      </div>
     </div>
   </header>
 
-  <main id="product-container"></main>
+  <div id="main-content">
+    </div>
+
+  <div id="product-modal" class="product-modal" style="display:none;"></div>
+
+  <div id="checkout-modal" class="checkout-modal" style="display:none;"></div>
 
   <script src="script.js"></script>
+
 </body>
 </html>
