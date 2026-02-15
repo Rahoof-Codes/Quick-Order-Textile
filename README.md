@@ -1,6 +1,6 @@
 # Modern-Mart 🛍️ | WhatsApp E-Commerce Solution
 
-![Project Banner](https://via.placeholder.com/1200x400?text=LuxeMart+Fashion+Store+Preview)
+![Project Banner](https://via.placeholder.com/1200x400?text=Modern-Mart+Fashion+Store+Preview)
 **Modern-Mart** is a lightweight, mobile-first e-commerce web application designed for small businesses to sell fashion and lifestyle products. It features a modern, "App-like" UI similar to **Meesho/Myntra** and handles checkout seamlessly via **WhatsApp**, requiring zero backend infrastructure.
 
 ---
@@ -55,4 +55,4 @@ To use this for your own business or client, simply update the **WhatsApp Number
 
 ```javascript
 // Replace with your 10-digit mobile number (Country Code 91 for India)
-const sellerNumber = "919361034037"; 
+const sellerNumber = "919999999999"; 
